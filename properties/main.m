@@ -16,10 +16,15 @@ int main(int argc, const char * argv[]) {
         //honda.running = YES;                // [honda setRunning:YES]
         //NSLog(@"%d", honda.running);        // [honda running]
         
+        //Car *honda = [[Car alloc] init];
+        //honda.running = YES;                // [honda setRunning:YES]
+        //NSLog(@"%d", honda.running);        // [honda isRunning]
+        //NSLog(@"%d", [honda running]);      // Error: method no longer exists
+        
         Car *honda = [[Car alloc] init];
-        honda.running = YES;                // [honda setRunning:YES]
-        NSLog(@"%d", honda.running);        // [honda isRunning]
-        NSLog(@"%d", [honda running]);      // Error: method no longer exists
+        [honda startEngine];
+        NSLog(@"Running: %d", honda.running);
+        honda.running = NO;                      // Error: read-only property
     }
     return 0;
 }

@@ -11,6 +11,10 @@
 @interface Car : NSObject
 
 // @property BOOL running;
-@property (getter=isRunning) BOOL running;
+@property (getter=isRunning, readonly) BOOL running;
+
+- (void)startEngine;
+- (void)stopEngine;
+
 
 @end

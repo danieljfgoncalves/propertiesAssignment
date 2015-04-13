@@ -10,6 +10,15 @@
 
 @implementation Car
 
-@synthesize running = _running;    // Optional for Xcode 4.4+
+// @synthesize running = _running;    // Optional for Xcode 4.4+
+
+- (void)startEngine {
+    _running = YES;
+}
+- (void)stopEngine {
+    _running = NO;
+}
+
+
 
 @end
