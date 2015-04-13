@@ -36,6 +36,7 @@ int main(int argc, const char * argv[]) {
         Car *honda = [[Car alloc]init];
         honda.model = @"Honda Civic";
         honda.driver = john;
+        john.car = honda;
         
         NSLog(@"%@ is driving a %@", honda.driver, honda.model);
     }
