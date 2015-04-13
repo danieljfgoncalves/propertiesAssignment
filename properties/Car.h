@@ -10,6 +10,7 @@
 
 @interface Car : NSObject
 
-@property BOOL running;
+// @property BOOL running;
+@property (getter=isRunning) BOOL running;
 
 @end

@@ -12,10 +12,14 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
+        //Car *honda = [[Car alloc] init];
+        //honda.running = YES;                // [honda setRunning:YES]
+        //NSLog(@"%d", honda.running);        // [honda running]
+        
         Car *honda = [[Car alloc] init];
         honda.running = YES;                // [honda setRunning:YES]
-        NSLog(@"%d", honda.running);        // [honda running]
-        
+        NSLog(@"%d", honda.running);        // [honda isRunning]
+        NSLog(@"%d", [honda running]);      // Error: method no longer exists
     }
     return 0;
 }
