@@ -26,9 +26,18 @@ int main(int argc, const char * argv[]) {
         //NSLog(@"Running: %d", honda.running);
         //honda.running = NO;                      // Error: read-only property
         
-        Car *bmw = [[Car alloc]init];
-        [bmw customModel];
-        NSLog(@"Model: %@", bmw.customModel);
+        //Car *bmw = [[Car alloc]init];
+        //[bmw customModel];
+        //NSLog(@"Model: %@", bmw.customModel);
+        
+        Person *john = [[Person alloc]init];
+        john.name = @"John";
+        
+        Car *honda = [[Car alloc]init];
+        honda.model = @"Honda Civic";
+        honda.driver = john;
+        
+        NSLog(@"%@ is driving a %@", honda.driver, honda.model);
     }
     return 0;
 }

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Person.h"
 
 @interface Car : NSObject
 
@@ -16,9 +17,12 @@
 //- (void)startEngine;
 //- (void)stopEngine;
 
-@property NSString *model;
+//@property NSString *model;
 
--(void)customModel;
+//-(void)customModel;
+
+@property (nonatomic)NSString *model;
+@property (nonatomic, strong)Person *driver;
 
 
 @end

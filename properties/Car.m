@@ -19,9 +19,9 @@
 //    _running = NO;
 //}
 
--(void)customModel {
-    _model = @"M5";
-}
+//-(void)customModel {
+//    _model = @"M5";
+//}
 
 
 @end
