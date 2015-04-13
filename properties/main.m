@@ -21,10 +21,14 @@ int main(int argc, const char * argv[]) {
         //NSLog(@"%d", honda.running);        // [honda isRunning]
         //NSLog(@"%d", [honda running]);      // Error: method no longer exists
         
-        Car *honda = [[Car alloc] init];
-        [honda startEngine];
-        NSLog(@"Running: %d", honda.running);
-        honda.running = NO;                      // Error: read-only property
+        //Car *honda = [[Car alloc] init];
+        //[honda startEngine];
+        //NSLog(@"Running: %d", honda.running);
+        //honda.running = NO;                      // Error: read-only property
+        
+        Car *bmw = [[Car alloc]init];
+        [bmw customModel];
+        NSLog(@"Model: %@", bmw.customModel);
     }
     return 0;
 }
