@@ -30,15 +30,22 @@ int main(int argc, const char * argv[]) {
         //[bmw customModel];
         //NSLog(@"Model: %@", bmw.customModel);
         
-        Person *john = [[Person alloc]init];
-        john.name = @"John";
+        //Person *john = [[Person alloc]init];
+        //john.name = @"John";
         
-        Car *honda = [[Car alloc]init];
-        honda.model = @"Honda Civic";
-        honda.driver = john;
-        john.car = honda;
+        //Car *honda = [[Car alloc]init];
+        //honda.model = @"Honda Civic";
+        //honda.driver = john;
+        //john.car = honda;
+        //NSLog(@"%@ is driving a %@", honda.driver, honda.model);
         
-        NSLog(@"%@ is driving a %@", honda.driver, honda.model);
+        Car *honda = [[Car alloc] init];
+        NSMutableString *model = [NSMutableString stringWithString:@"Honda Civic"];
+        honda.model = model;
+        
+        NSLog(@"%@", honda.model);
+        [model setString:@"Nissa Versa"];
+        NSLog(@"%@", honda.model);            // Still "Honda Civic"
     }
     return 0;
 }

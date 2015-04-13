@@ -21,8 +21,10 @@
 
 //-(void)customModel;
 
-@property (nonatomic)NSString *model;
-@property (nonatomic, strong)Person *driver;
+//@property (nonatomic)NSString *model;
+//@property (nonatomic, strong)Person *driver;
+
+@property (nonatomic, copy) NSString *model;
 
 
 @end
