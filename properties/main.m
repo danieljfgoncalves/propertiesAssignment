@@ -7,11 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Car.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        Car *honda = [[Car alloc] init];
+        honda.running = YES;                // [honda setRunning:YES]
+        NSLog(@"%d", honda.running);        // [honda running]
+        
     }
     return 0;
 }
